@@ -19,6 +19,9 @@ if (!fs.existsSync(`./${variables.REPOS}`)) {
 if (!fs.existsSync(`./${variables.HELPERS_REPO}`)) {
   fs.mkdirSync(`${variables.HELPERS_REPO}`);
 }
+if (!fs.existsSync(`./${variables.MOCK_DATA}`)) {
+  fs.mkdirSync(`${variables.MOCK_DATA}`);
+}
 if (arg[2] && arg[2].toLowerCase() === "update") {
   RepoList = getAllDir(`./${variables.REPOS}`);
 }
